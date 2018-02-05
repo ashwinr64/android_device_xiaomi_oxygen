@@ -16,7 +16,7 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-$(call inherit-product, vendor/xiaomi/mido/mido-vendor.mk)
+$(call inherit-product, vendor/xiaomi/oxygen/oxygen-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay

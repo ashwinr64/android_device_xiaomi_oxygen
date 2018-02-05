@@ -18,13 +18,13 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from mido device
-$(call inherit-product, device/xiaomi/mido/device.mk)
+# Inherit from oxygen device
+$(call inherit-product, device/xiaomi/oxygen/device.mk)
 
 # Device identifier. This must come after all inclusions
 TARGET_VENDOR := Xiaomi
-PRODUCT_DEVICE := mido
-PRODUCT_NAME := full_mido
+PRODUCT_DEVICE := oxygen
+PRODUCT_NAME := full_oxygen
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi Note 4
+PRODUCT_MODEL := MI MAX 2
 PRODUCT_MANUFACTURER := Xiaomi

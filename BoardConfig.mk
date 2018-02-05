@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/mido
+DEVICE_PATH := device/xiaomi/oxygen
 
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
@@ -43,8 +43,8 @@ BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
-TARGET_KERNEL_CONFIG := mido_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8953
+TARGET_KERNEL_CONFIG := lineageos_oxygen_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/oxygen
 
 # ANT
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
@@ -161,9 +161,9 @@ TARGET_NO_RPC := true
 TARGET_ANDROID_FILESYSTEM_CONFIG_H := $(DEVICE_PATH)/android_filesystem_config.h
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_mido
+TARGET_INIT_VENDOR_LIB := libinit_oxygen
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
-TARGET_RECOVERY_DEVICE_MODULES := libinit_mido
+TARGET_RECOVERY_DEVICE_MODULES := libinit_oxygen
 
 # Keymaster
 TARGET_PROVIDES_KEYMASTER := true
@@ -225,4 +225,4 @@ WIFI_DRIVER_FW_PATH_STA := "sta"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
--include vendor/xiaomi/mido/BoardConfigVendor.mk
+-include vendor/xiaomi/oxygen/BoardConfigVendor.mk
