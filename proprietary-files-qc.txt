@@ -116,6 +116,17 @@ vendor/lib64/libxml.so
 # Charger
 bin/hvdcp_opti
 
+# Display calibration - from oneplus3 OB24 / OB15
+etc/permissions/com.qti.snapdragon.sdk.display.xml|bd2a3394bdd6ec4e94fa6a59e816a97e89940ab6
+-framework/com.qti.snapdragon.sdk.display.jar|bd9898c563fd7a38fd57eb09bdc6eb5c5f4c5fa1
+-vendor/app/colorservice/colorservice.apk|1e6fbfd6030e60182dd2a212c46ecc9851a10e1c
+vendor/lib64/libscalar.so|57ab34121680dbb3d9c4be74a3f26a9210a8dde1
+vendor/lib64/libsd_sdk_display.so|31916490a4dcc644a5e09208c469abee43cf40cf
+vendor/lib64/libsdm-color.so|9906b519ba328b9a10695081459e1dee1bbf46d1
+vendor/lib64/libsdm-diag.so|f9ca7943a929d9f60521f6d1099360d8bb6440e6
+vendor/lib64/libsdm-disp-apis.so|7a92054da305786ba58451e265e856b01c3ef18d
+vendor/lib64/libsdmextension.so|cfa177edc25c06e1e4d702315a3725229630c81f
+
 # DPM
 bin/dpmd
 etc/dpm/dpm.conf
@@ -228,7 +239,6 @@ vendor/lib64/libxtadapter.so
 vendor/lib64/libxtwifi_ulp_adaptor.so
 
 # Graphics
--vendor/lib/libsdm-disp-apis.so
 vendor/lib/egl/eglSubDriverAndroid.so
 vendor/lib/egl/libEGL_adreno.so
 vendor/lib/egl/libGLESv1_CM_adreno.so
@@ -255,7 +265,6 @@ vendor/lib/libmmQSM.so
 vendor/lib/librs_adreno.so
 vendor/lib/librs_adreno_sha1.so
 vendor/lib/libscale.so
-vendor/lib/libsd_sdk_display.so
 vendor/lib64/egl/eglSubDriverAndroid.so
 vendor/lib64/egl/libEGL_adreno.so
 vendor/lib64/egl/libGLESv1_CM_adreno.so
@@ -264,7 +273,6 @@ vendor/lib64/egl/libQTapGLES.so
 vendor/lib64/egl/libq3dtools_adreno.so
 vendor/lib64/egl/libq3dtools_esx.so
 vendor/lib64/hw/vulkan.msm8953.so
--vendor/lib64/libsdm-disp-apis.so
 vendor/lib64/libC2D2.so
 vendor/lib64/libCB.so
 vendor/lib64/libOpenCL.so
@@ -283,12 +291,7 @@ vendor/lib64/libmm-qdcm.so
 vendor/lib64/libmmQSM.so
 vendor/lib64/librs_adreno.so
 vendor/lib64/librs_adreno_sha1.so
-vendor/lib64/libscalar.so
 vendor/lib64/libscale.so
-vendor/lib64/libsd_sdk_display.so
-vendor/lib64/libsdm-color.so
-vendor/lib64/libsdm-diag.so
-vendor/lib64/libsdmextension.so
 
 # Graphic blur - from op3
 vendor/lib64/libuiblur.so|4b3fabf5ded7c4af531abde681676fc5e9248494
@@ -374,7 +377,6 @@ vendor/lib/libperipheral_client.so
 vendor/lib64/libperipheral_client.so
 
 # Postprocessing
-framework/com.qti.snapdragon.sdk.display.jar
 vendor/bin/mm-pp-dpps
 vendor/lib/libdisp-aba.so
 vendor/lib64/libdisp-aba.so
@@ -507,3 +509,5 @@ vendor/lib/mediadrm/libwvdrmengine.so|70419ce1f8eb6bd3aa36234f8d7e8003569efc9c
 
 # Wi-Fi
 bin/wcnss_service
+etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
+etc/firmware/wlan/prima/WCNSS_wlan_dictionary.dat
