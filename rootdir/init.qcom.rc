@@ -28,6 +28,8 @@
 import init.qcom.usb.rc
 import init.target.rc
 
+import init.oxygen.rc
+
 on early-init
     mount debugfs debugfs /sys/kernel/debug
     chmod 0755 /sys/kernel/debug
@@ -642,27 +644,6 @@ service fingerprintd /system/bin/fingerprintd
     system system
     writepid /dev/cpuset/system-background/tasks
     disabled
-
-service gx_fpd /system/bin/gx_fpd
-     class core
-     user root
-     group system system
-     writepid /dev/cpuset/system-background/tasks
-
-on property:sys.fp.vendor=switchf
-    stop gx_fpd
-    setprop sys.fp.vendor searchf
-    start fingerprintd
-    setprop fpc.fp.miui.token 0
-    setprop ro.boot.fpsensor fpc
-    setprop ro.hardware.fingerprint searchf
-
-on property:sys.fp.onstart=1
-   start fingerprintd
-   setprop goodix.fp.miui.analyse 1
-   setprop goodix.fp.miui.token 0
-   setprop ro.boot.fpsensor gdx
-   setprop ro.hardware.fingerprint goodix
 
 on property:vold.decrypt=trigger_restart_min_framework
     start time_daemon
