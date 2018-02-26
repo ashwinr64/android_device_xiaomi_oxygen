@@ -102,7 +102,7 @@ PRODUCT_PACKAGES += \
     Snap
 
 # Consumerir
-PRODUCT_PACKAGES += \
+# PRODUCT_PACKAGES += \
     consumerir.msm8953
 
 # Display

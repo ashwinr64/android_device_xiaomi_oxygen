@@ -1365,6 +1365,9 @@ etc/firmware/cpp_firmware_v1_8_0.fw
 etc/firmware/cpp_firmware_v1_10_0.fw
 etc/firmware/cpp_firmware_v1_12_0.fw
 
+# ConsumerIR
+lib64/hw/consumerir.default.so:lib64/hw/consumerir.msm8953.so
+
 # Display calibration
 -etc/qdcm_calib_data_auo_r61322_1080p_video_mode_dsi_panel.xml
 -etc/qdcm_calib_data_tianma_r63350_1080p_video_mode_dsi_panel.xml
