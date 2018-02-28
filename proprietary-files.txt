@@ -1,3 +1,10 @@
+# ADSP modules
+vendor/lib/rfsa/adsp/tas2560_aac.bin
+vendor/lib/rfsa/adsp/tas2560_ssi.bin
+vendor/lib/rfsa/adsp/libdirac-capiv2.so
+vendor/lib/rfsa/adsp/dirac_resource.dar
+vendor/lib/rfsa/adsp/dirac_resource.so
+
 # Audio
 lib/hw/audio.a2dp.default.so
 lib/hw/audio.primary.default.so
