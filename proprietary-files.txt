@@ -1367,7 +1367,7 @@ lib64/hw/consumerir.default.so:lib64/hw/consumerir.msm8953.so
 
 # Display calibration
 -etc/qdcm_calib_data_auo_r61322_1080p_video_mode_dsi_panel.xml
--etc/qdcm_calib_data_tianma_r63350_1080p_video_mode_dsi_panel.xml
+-etc/qdcm_calib_data_tianma_r63350_1080p_video_mode_dsi_panel.xml|d6e8d94b3355c44be3e3ec8b4197f9f6bbe71089
 
 # Fingerprint
 bin/goodixfp
