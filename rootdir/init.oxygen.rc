@@ -27,10 +27,3 @@ service goodixfp /system/bin/goodixfp
     user system
     group system sdcard_rw
     oneshot
-
-on property:init.svc.goodixfp=running
-    setprop persist.sys.fp.vendor goodix
-    setprop ro.boot.fpsensor goodix
-    setprop ro.hardware.fp.goodix true
-    setprop ro.hardware.fingerprint goodix
-    start fingerprintd

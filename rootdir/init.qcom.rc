@@ -647,7 +647,6 @@ service fingerprintd /system/bin/fingerprintd
     group system sdcard_rw
     system system
     writepid /dev/cpuset/system-background/tasks
-    disabled
 
 on property:vold.decrypt=trigger_restart_min_framework
     start time_daemon
