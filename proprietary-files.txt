@@ -5,10 +5,6 @@ vendor/lib/rfsa/adsp/libdirac-capiv2.so
 vendor/lib/rfsa/adsp/dirac_resource.dar
 vendor/lib/rfsa/adsp/dirac_resource.so
 
-# Audio
-lib/hw/audio.primary.msm8953.so
-lib64/hw/audio.primary.msm8953.so
-
 # Audio dirac and dolby
 lib/soundfx/libdirac.so
 vendor/lib/libhwdaphal.so
